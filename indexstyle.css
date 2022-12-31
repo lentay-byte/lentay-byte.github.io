@@ -1,0 +1,39 @@
+* {
+    margin: 0, auto;
+}
+
+.topbar {
+   color: black;
+   background-color: lightgray;
+   font-family: 'Times New Roman', Times, serif;
+   
+
+}
+
+header h1{
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px 20px;
+    
+}
+
+header h4{
+    color: black;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px 100px;
+    margin: 30px 100px 30px 100px;
+}
+
+.projects {
+    background-color: gray;
+    padding: 10px;
+}
+
+.projects h2 {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 0px;
+}
+
