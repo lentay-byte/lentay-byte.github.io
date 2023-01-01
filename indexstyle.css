@@ -18,11 +18,15 @@ header h1{
 }
 
 header h4{
-    color: black;
+    color: white;
     text-align: center;
-    background-color: lightgray;
+    background: linear-gradient(70deg, blue, pink);
+    opacity: .75;
+    
     padding: 10px 100px;
-    margin: 30px 100px 30px 100px;
+    margin: 30px 300px;
+    
+    
 }
 
 .projects {
@@ -35,5 +39,11 @@ header h4{
     background-color: lightgrey;
     padding: 10px;
     margin: 0px;
+}
+
+.projects ul {
+    background-color: lightgray;
+    padding: 10px 20px;
+    
 }
 
