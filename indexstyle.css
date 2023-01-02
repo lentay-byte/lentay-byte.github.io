@@ -47,3 +47,13 @@ header h4{
     
 }
 
+.projects .projectsNav h3 {
+
+    border: border-box;
+    text-align: center;
+    background-color:cadetblue;
+    padding: 20px 50px;
+    width: 150px;
+    height: 300px;
+    margin: 30px auto;
+}
