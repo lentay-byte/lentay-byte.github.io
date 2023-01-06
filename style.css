@@ -1,0 +1,14 @@
+.topbar {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.topbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 35px;
+    font-size: 15px;
+
+
+}
