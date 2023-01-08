@@ -4,10 +4,15 @@
 }
 
 .topbar {
-    color: black;
     font-family: 'Times New Roman', Times, serif;
-    background-color: lightgray;
+    background-color: black;
     padding: 20px;
+    position: stick;
+    
+    
+}
+.topbar ul {
+    background-color: black;
     
 }
 
@@ -16,16 +21,41 @@
     display: inline-block;
     margin: 0px 35px;
     font-size: 15px;
+    
 }
 
 .menustyle {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
+    background-color: black;
 }
 
 .menustyle:hover {
     font-weight: bold;
     border-bottom: solid 2px rgb(142, 61, 61);
 
+}
+
+
+.heading-container {
+    display: grid;
+    background-color: lightblue;
+    height: 500px;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.welcome-cont {
+    padding: 5px;
+    background-color: lightgreen;
+
+
+
+}
+
+.skills-cont {
+    padding: 5px;
+    background-color: lightsalmon;
+    
 }
