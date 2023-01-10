@@ -3,58 +3,67 @@
     padding: 0;
 }
 
+/*------------- Top navigator -----------------------------*/
 .topbar {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
-    padding: 20px;
-    position: stick;
-    
-    
-}
-.topbar ul {
-    background-color: black;
-    
+    padding: 15px 100px 15px 15px;
+    overflow: hidden;
+    text-align: center;
+
 }
 
-.topbar ul li{
-    list-style: none;
+.topbar a{
+    left: 25%;
     display: inline-block;
+    text-decoration: none;
     margin: 0px 35px;
     font-size: 15px;
-    
-}
-
-.menustyle {
     color: white;
-    text-decoration: none;
     padding: 10px;
-    background-color: black;
+    border-bottom: solid 2px black;
+
 }
 
-.menustyle:hover {
-    font-weight: bold;
+.topbar a:hover {
     border-bottom: solid 2px rgb(142, 61, 61);
-
 }
 
-.heading-container {
-    background-color: lightblue;
-    height: 300px;
+/*------------- Welcome section -----------------------------*/
 
+.heading-cont {
+    color: white;
+    background-image: url('./images/greengrass.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding: 10px;
+}
+.heading-cont h2 {
+    text-align: center;
+    position: relative;
+    top: 15%;
 }
 
-.welcome-cont {
-    padding: 5px;
+/*.welcome-cont {
+    height: 290px;
+    padding: 50px 5px;
+    width: 90%;
     background-color: lightgreen;
+    margin: auto;
 
-}
+}*/
 
+
+/*-------------  About and skills section  -----------------------------*/
 .mid-container {
     display: grid;
     background-color: green;
     height: 300px;
     grid-template-columns: 2fr 1fr;
 }
+
 
 .about-cont {
     padding: 5px;
@@ -66,6 +75,8 @@
     background-color: lightsalmon;
     
 }
+
+/*------------- Projects Section -----------------------------*/
 
 .projects-cont {
     background-color: aquamarine;
