@@ -57,7 +57,6 @@
     font-size: 3.8em;
     font-weight: bold;
     text-align: center;
-
 }
 
 .intro p {
@@ -67,27 +66,18 @@
     text-align: justify;
 }
 
-/*.welcome-cont {
-    height: 290px;
-    padding: 50px 5px;
-    width: 90%;
-    background-color: lightgreen;
-    margin: auto;
-
-}*/
 
 
 /*-------------  About and skills section  -----------------------------*/
 .mid-container {
     display: grid;
-    height: 300px;
+    height: 350px;
     grid-template-columns: 3fr 2fr;
-    background-color: white;
+    background-color: #536b63ba;
 }
 
 .mid-container div {
     box-sizing: border-box;
-    background-color: white;
     margin: 0 auto;
     width: 100%;
     color: black;
@@ -97,13 +87,10 @@
 .about {
     border-right: solid 5px rgb(142, 61, 61);
 
-
 }
 .skills {
     border-left: solid 5px rgb(142, 61, 61);
-    
 }
-
 
 .about h2, .skills h2 {
     text-align: center;
@@ -118,18 +105,41 @@
     font-size: 1.1em;
     line-height: 1.5;
     text-align: justify;
-    border: solid 1px black;
+    
     
 }
 .skills-list {
     width: 70%;
     margin: auto;
     box-sizing: border-box;
-    line-height: 2.5em;
+    line-height: 3em;
     padding-left: 20px;
-    border: solid 1px black;
 
 }
+
+.skills-list li {
+    list-style-type: square;
+}
+
+.resume-btn {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.resume-btn:hover {
+    color: white;
+    background-color: rgb(142, 61, 61);
+    cursor: pointer;
+}
+
+.resume-btn:active{
+    opacity: 70%;
+}
+
+
+
 /*
 .about-cont {
     
@@ -148,6 +158,12 @@
 /*------------- Projects Section -----------------------------*/
 
 .projects-cont {
-    background-color: aquamarine;
     height: 400px;
+}
+
+.projects-cont h2 {
+    margin: 2px auto;
+    border: solid 1px black;
+    text-align: center;
+
 }
