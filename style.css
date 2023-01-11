@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
 }
 
 /*------------- Top navigator -----------------------------*/
@@ -63,7 +64,7 @@
     padding-top: 30px;
     font-size: 1.2em;
     line-height: 1.5em;
-
+    text-align: justify;
 }
 
 /*.welcome-cont {
@@ -79,22 +80,70 @@
 /*-------------  About and skills section  -----------------------------*/
 .mid-container {
     display: grid;
-    background-color: green;
     height: 300px;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+}
+
+.mid-container div {
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    color: black;
+    padding: 5px;
+}
+
+.about {
+    border-right: solid 5px rgb(142, 61, 61);
+
+
+}
+.skills {
+    border-left: solid 5px rgb(142, 61, 61);
+    
 }
 
 
+.about h2, .skills h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 14px;
+
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: justify;
+    border: solid 1px black;
+    
+}
+.skills-list {
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    line-height: 2.5em;
+    padding-left: 20px;
+    border: solid 1px black;
+
+}
+/*
 .about-cont {
-    padding: 5px;
-    background-color: yellow;
+    
+    
 }
 
 .skills-cont {
+    background-color: white;
+    margin: 0 auto;
+    color: black;
     padding: 5px;
-    background-color: lightsalmon;
     
 }
+*/
 
 /*------------- Projects Section -----------------------------*/
 
