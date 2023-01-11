@@ -158,7 +158,9 @@
 /*------------- Projects Section -----------------------------*/
 
 .projects-cont {
-    height: 400px;
+    border: solid 3px blue;
+    box-sizing: border-box;
+    height: auto;
 }
 
 .projects-cont h2 {
@@ -166,4 +168,28 @@
     border: solid 1px black;
     text-align: center;
 
+}
+
+.card-holders {
+    display: grid;
+    box-sizing: border-box;
+    grid-gap: 2rem;
+    border: solid 1px red;
+    padding: 1rem 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
+}
+
+.p-card {
+    background-color: lightgray;
+    padding: 10px;
+    min-height: 300px;
+    height: auto;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.p-card h3 {
+    text-align: center;
+    padding: 5px;
 }
