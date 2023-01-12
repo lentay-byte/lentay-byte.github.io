@@ -105,7 +105,7 @@
     font-size: 1.1em;
     line-height: 1.5;
     text-align: justify;
-    
+    overflow: hidden;
     
 }
 .skills-list {
@@ -126,6 +126,7 @@
     margin: 10px 0;
     background-color: white;
     border: solid 2px black;
+    border-radius: 5px;
 }
 
 .resume-btn:hover {
@@ -139,32 +140,18 @@
 }
 
 
-
-/*
-.about-cont {
-    
-    
-}
-
-.skills-cont {
-    background-color: white;
-    margin: 0 auto;
-    color: black;
-    padding: 5px;
-    
-}
-*/
-
 /*------------- Projects Section -----------------------------*/
 
 .projects-cont {
     border: solid 3px blue;
     box-sizing: border-box;
     height: auto;
+    background-color: beige;
 }
 
 .projects-cont h2 {
-    margin: 2px auto;
+    font-size: 1.8em;
+    margin: 8px auto;
     border: solid 1px black;
     text-align: center;
 
@@ -173,23 +160,53 @@
 .card-holders {
     display: grid;
     box-sizing: border-box;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     border: solid 1px red;
     padding: 1rem 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem,.5fr));
+    grid-template-columns: repeat(auto-fill, minmax(17rem,1fr));
     height: fit-content;
+    width: 75%;
+    margin: auto;
 }
 
 .p-card {
     background-color: lightgray;
     padding: 10px;
-    min-height: 300px;
+    min-height: 350px;
     height: auto;
     border: solid 3px black;
     border-radius: 10px;
+    margin-top: 5px;
+}
+
+.p-card:hover {
+    margin-top: 0px;
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 5px;
+
 }
 
 .p-card h3 {
+    font-size: 1.4em;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    border: solid 3px black;
+}
+
+.p-card p {
+    padding: 15px 5px;
+    font-size: 1.1em;
+    border: solid 3px black;
+    margin: 5px 0px;
+    line-height: 1.5;
+}
+
+#tools {
+    text-align: center;
+    font-size: .9em;
+    position: relative;
+}
+
+.pblur {
+    filter:blur(3px);
 }
