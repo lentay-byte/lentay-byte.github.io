@@ -39,7 +39,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
+    min-height: 350px;
+    height:auto;
     padding: 10px;
     align-items: center;
 }
@@ -71,9 +72,11 @@
 /*-------------  About and skills section  -----------------------------*/
 .mid-container {
     display: grid;
-    height: 350px;
+    height: auto;
+    min-height: 350px;
     grid-template-columns: 3fr 2fr;
     background-color: #536b63ba;
+
 }
 
 .mid-container div {
@@ -85,11 +88,11 @@
 }
 
 .about {
-    border-right: solid 5px rgb(142, 61, 61);
+    border-right: solid 5px white;
 
 }
 .skills {
-    border-left: solid 5px rgb(142, 61, 61);
+    border-left: solid 5px white;
 }
 
 .about h2, .skills h2 {
@@ -167,6 +170,7 @@
     height: fit-content;
     width: 75%;
     margin: auto;
+    overflow: auto;
 }
 
 .p-card {
@@ -210,3 +214,51 @@
 .pblur {
     filter:blur(3px);
 }
+
+
+/*------------- Footer Sections -----------------------------*/
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+
+
+
+/*------------- Web Responsive-----------------------------*/
+/* Nav responsive phones */
+@media only screen and (max-width: 425px){
+    .topbar a:not(:first-child) {display: none;}
+    .topbar {display: block;}
+    .heading-cont{height: 390px}
+    .intro {width: 95%; font-size: .9em;}
+    .intro h2 {font-size: 2.5rem;}
+
+
+    .mid-container{grid-template-columns: 1fr;}
+    .about{ border-bottom: solid 3px white; border-right: none; }
+    .about p{width: 93%; line-height: 1.4em;}
+    .skills{border-left: none;}
+    .skills-list{line-height: 1.5em; padding-left: 10px;}
+
+    .card-holders{width: 95%; padding: 1.5rem;}
+    .p-card {padding: 2px; min-height: 0;} 
+    .p-card h3{font-size: 1em; }
+    .p-card p{font-size: 1em;}
+}
+
+@media only screen and (max-width:500px){
+    .card-holders{ grid-template-columns: 1fr;}
+
+}
+
+
+/* Nav responsive tablets */
+
+
+
+
+
