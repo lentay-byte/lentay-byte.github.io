@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 }
 
-.topbar a{
+.topbar a {
     left: 25%;
     display: inline-block;
     text-decoration: none;
@@ -34,13 +34,13 @@
 
 .heading-cont {
     color: white;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), 
-                rgba(0, 0, 0, 0.2) ), url('./images/greengrass.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url('./images/greengrass.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 350px;
-    height:auto;
+    height: auto;
     padding: 10px;
     align-items: center;
 }
@@ -58,6 +58,7 @@
     font-size: 3.8em;
     font-weight: bold;
     text-align: center;
+    padding-top: 25px;
 }
 
 .intro p {
@@ -75,7 +76,7 @@
     height: auto;
     min-height: 350px;
     grid-template-columns: 3fr 2fr;
-    background-color: #536b63ba;
+    background-color: white;
 
 }
 
@@ -91,15 +92,17 @@
     border-right: solid 5px white;
 
 }
+
 .skills {
     border-left: solid 5px white;
 }
 
-.about h2, .skills h2 {
+.about h2,
+.skills h2 {
     text-align: center;
     font-weight: bold;
     padding: 14px;
-
+    border-bottom: solid 3px black;
 }
 
 .about p {
@@ -109,14 +112,20 @@
     line-height: 1.5;
     text-align: justify;
     overflow: hidden;
-    
+
 }
+
 .skills-list {
-    width: 70%;
+    display: grid;
     margin: auto;
+    position: relative;
+    left: 35px;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
     box-sizing: border-box;
     line-height: 3em;
     padding-left: 20px;
+
 
 }
 
@@ -138,7 +147,7 @@
     cursor: pointer;
 }
 
-.resume-btn:active{
+.resume-btn:active {
     opacity: 70%;
 }
 
@@ -146,27 +155,23 @@
 /*------------- Projects Section -----------------------------*/
 
 .projects-cont {
-    border: solid 3px blue;
     box-sizing: border-box;
     height: auto;
-    background-color: beige;
+    background-color: white;
 }
 
 .projects-cont h2 {
     font-size: 1.8em;
-    margin: 8px auto;
-    border: solid 1px black;
     text-align: center;
-
+    border-bottom: solid 3px black;
 }
 
 .card-holders {
     display: grid;
     box-sizing: border-box;
     grid-gap: 1.5rem;
-    border: solid 1px red;
     padding: 1rem 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(17rem,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     height: fit-content;
     width: 75%;
     margin: auto;
@@ -194,13 +199,12 @@
     font-size: 1.4em;
     text-align: center;
     padding: 10px;
-    border: solid 3px black;
+    border-bottom: solid 3px black;
 }
 
 .p-card p {
     padding: 15px 5px;
     font-size: 1.1em;
-    border: solid 3px black;
     margin: 5px 0px;
     line-height: 1.5;
 }
@@ -212,7 +216,7 @@
 }
 
 .pblur {
-    filter:blur(3px);
+    filter: blur(3px);
 }
 
 
@@ -221,7 +225,6 @@
 footer p {
     text-align: center;
     font-size: 12px;
-    border: solid 1px black;
     padding: 10px;
 }
 
@@ -230,35 +233,39 @@ footer p {
 
 /*------------- Web Responsive-----------------------------*/
 /* Nav responsive phones */
-@media only screen and (max-width: 425px){
-    .topbar a:not(:first-child) {display: none;}
-    .topbar {display: block;}
-    .heading-cont{height: 390px}
-    .intro {width: 95%; font-size: .9em;}
-    .intro h2 {font-size: 2.5rem;}
+@media only screen and (max-width: 425px) {
+
+    * p,
+    li { font-size: .9rem;}
+    .topbar {display: none;}
+
+    .heading-cont {height: auto;}
+    .intro h2 {font-size: 2.5rem; padding-top: none;}
+    .intro {width: 95%; font-size: .8em;}
 
 
-    .mid-container{grid-template-columns: 1fr;}
-    .about{ border-bottom: solid 3px white; border-right: none; }
-    .about p{width: 93%; line-height: 1.4em;}
-    .skills{border-left: none;}
-    .skills-list{line-height: 1.5em; padding-left: 10px;}
+    .mid-container { grid-template-columns: 1fr; width: 100%;}
+    .about {border-bottom: solid 3px white; border-right: none;}
+    .about p {width: 93%; line-height: 1.4em; font-size: .9em;}
 
-    .card-holders{width: 95%; padding: 1.5rem;}
-    .p-card {padding: 2px; min-height: 0;} 
-    .p-card h3{font-size: 1em; }
-    .p-card p{font-size: 1em;}
+    .skills {border-left: none;}
+    .skills-list {line-height: 1.5em; padding-left: 1px;}
+    .card-holders {width: 95%; padding: 1.5rem;}
+    .p-card {padding: 2px; min-height: 0;}
+    .p-card h3 {font-size: 1em;}
+    .p-card p {font-size: 1em;}
 }
 
-@media only screen and (max-width:500px){
-    .card-holders{ grid-template-columns: 1fr;}
+@media only screen and (max-width:500px) {
+    .card-holders {
+        grid-template-columns: 1fr;
+    }
 
 }
 
 
 /* Nav responsive tablets */
 
-
-
-
-
+@media only screen and (min-width:501px) and (max-width:768px) {
+    .intro { width: 80%;}
+}
