@@ -8,7 +8,7 @@
 /*------------- Top navigator -----------------------------*/
 .topbar {
     font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: rgba(249, 249, 249);
     padding: 15px 100px 15px 15px;
     overflow: hidden;
     text-align: center;
@@ -21,12 +21,10 @@
     text-decoration: none;
     margin: 0px 35px;
     font-size: 15px;
-    color: white;
+    color: black;
     padding: 10px;
-    border-bottom: solid 2px black;
-
+    border-bottom: solid 2px rgba(249, 249, 249);
 }
-
 .topbar a:hover {
     border-bottom: solid 2px rgb(142, 61, 61);
 }
@@ -75,18 +73,24 @@
 .mid-container {
     display: grid;
     height: auto;
+    margin: 10px;
     min-height: 350px;
     grid-template-columns: 3fr 2fr;
-    background-color: white;
-
+    grid-gap: 10px;
+    
 }
 
 .mid-container div {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 100%;
     color: black;
     padding: 5px;
+
+    background-color: lightgray;
+    border: solid 2px lightgray;
+    border-radius: 25px;
+    
 }
 
 .about {
@@ -103,7 +107,6 @@
     text-align: center;
     font-weight: bold;
     padding: 14px;
-    border-bottom: solid 3px black;
 }
 
 .about p {
@@ -119,8 +122,6 @@
 .skills-list {
     display: grid;
     margin: auto;
-    position: relative;
-    left: 35px;
     grid-template-columns: 1fr 1fr;
     width: 70%;
     box-sizing: border-box;
@@ -164,7 +165,6 @@
 .projects-cont h2 {
     font-size: 1.8em;
     text-align: center;
-    border-bottom: solid 3px black;
 }
 
 .card-holders {
@@ -184,7 +184,7 @@
     padding: 10px;
     min-height: 350px;
     height: auto;
-    border: solid 3px black;
+    border: solid 3px rgb(249, 249, 249);
     border-radius: 10px;
     margin-top: 5px;
 }
@@ -200,7 +200,6 @@
     font-size: 1.4em;
     text-align: center;
     padding: 10px;
-    border-bottom: solid 3px black;
 }
 
 .p-card p {
@@ -218,6 +217,31 @@
 
 .pblur {
     filter: blur(3px);
+}
+
+.btn-holder{
+    text-align: center;
+    padding: 10px;
+}
+.project-btn {
+    margin: 0 auto;
+    font-size: 1.1em;
+    padding: 5px 15px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.project-btn:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+.project-btn:active {
+    font-size: 1.2em;
 }
 
 
@@ -245,7 +269,7 @@ footer p {
     .intro {width: 95%; font-size: .8em;}
 
 
-    .mid-container { grid-template-columns: 1fr; width: 100%;}
+    .mid-container { grid-template-columns: 1fr; width: 100%; grid-gap: 0;}
     .about {border-bottom: solid 3px white; border-right: none;}
     .about p {width: 93%; line-height: 1.4em; font-size: .9em;}
 
@@ -260,6 +284,7 @@ footer p {
 @media only screen and (max-width:500px) {
     .card-holders {
         grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 
 }
