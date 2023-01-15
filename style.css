@@ -263,12 +263,11 @@ footer p {
     .intro h2 {font-size: 2.5rem; padding-top: none;}
     .intro {width: 95%; font-size: .8em;}
 
-
     .mid-container { grid-template-columns: 1fr; width: 100%; grid-gap: 0;}
     .about {border-bottom: solid 3px white; border-right: none;}
     .about p {width: 93%; line-height: 1.4em; font-size: .9em;}
 
-    .skills {border-left: none;}
+    
     .skills-list {line-height: 1.5em; padding-left: 1px;}
     .card-holders {width: 95%; padding: 1.5rem;}
     .p-card {padding: 2px; min-height: 0;}
