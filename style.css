@@ -3,6 +3,7 @@
     padding: 0;
     background-repeat: no-repeat;
     font-family: 'Work Sans', sans-serif;
+
 }
 
 /*------------- Top navigator -----------------------------*/
@@ -71,13 +72,16 @@
 
 /*-------------  About and skills section  -----------------------------*/
 .mid-container {
-    display: grid;
     height: auto;
     margin: 10px;
     min-height: 350px;
-    grid-template-columns: 3fr 2fr;
     grid-gap: 10px;
-    
+    text-align: center;
+}
+
+.mid-container h2 {
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .mid-container div {
@@ -86,7 +90,7 @@
     width: 100%;
     color: black;
     padding: 5px;
-
+    width: 75%;
     background-color: lightgray;
     border: solid 2px lightgray;
     border-radius: 25px;
@@ -98,41 +102,32 @@
 
 }
 
-.skills {
-    border-left: solid 5px white;
-}
-
-.about h2,
-.skills h2 {
-    text-align: center;
-    font-weight: bold;
-    padding: 14px;
+.info-align {
+    width: 70%;
+    border: solid 1px black;
 }
 
 .about p {
-    width: 70%;
-    margin: auto;
+    box-sizing: border-box;
     font-size: 1.1em;
     line-height: 1.5;
-    text-align: justify;
     overflow: hidden;
+    text-align: justify;
 
 }
 
 .skills-list {
     display: grid;
-    margin: auto;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 30%;
     box-sizing: border-box;
-    line-height: 3em;
-    padding-left: 20px;
-
-
+    padding: 5px;
+    
 }
 
 .skills-list li {
     list-style-type: square;
+    padding: none;
 }
 
 .resume-btn {
