@@ -3,6 +3,7 @@
     padding: 0;
     background-repeat: no-repeat;
     font-family: 'Work Sans', sans-serif;
+    
 
 }
 
@@ -35,7 +36,7 @@
 .heading-cont {
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)), url('./images/greengrass.jpg');
+            rgba(0, 0, 0, 0.2)), url('./images/astronaut.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -77,11 +78,13 @@
     min-height: 350px;
     grid-gap: 10px;
     text-align: center;
+    
 }
 
 .mid-container h2 {
     font-size: 1.8em;
     font-weight: bold;
+    
 }
 
 .mid-container div {
@@ -91,14 +94,15 @@
     color: black;
     padding: 5px;
     width: 75%;
-    background-color: lightgray;
-    border: solid 2px lightgray;
+    background-color: #dbe0e4;
+    border: solid 2px #dbe0e4;
     border-radius: 25px;
+    opacity: .85;
     
 }
 
 .about {
-    border-right: solid 5px white;
+    border-right: solid 5px #dbe0e4;
 
 }
 
@@ -140,7 +144,7 @@
 
 .resume-btn:hover {
     color: white;
-    background-color: rgb(142, 61, 61);
+    background-color: black;
     cursor: pointer;
 }
 
@@ -175,19 +179,22 @@
 }
 
 .p-card {
-    background-color: lightgray;
+    background-color: #dbe0e4;
     padding: 10px;
     min-height: 350px;
     height: auto;
-    border: solid 3px rgb(249, 249, 249);
+    border: solid 3px #dbe0e4;
     border-radius: 10px;
     margin-top: 5px;
+    opacity: .85;
+
 }
 
 .p-card:hover {
     margin-top: 0px;
-    background-color: rgb(249, 249, 249);
+    background-color: dbe0e4;
     margin-bottom: 5px;
+    box-shadow: 10px 5px 5px black;
 
 }
 
