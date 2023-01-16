@@ -7,8 +7,23 @@
 
 }
 
-/*------------- Top navigator -----------------------------*/
-.topbar {
+/*------------- navigator -----------------------------*/
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sidebar ul {padding: 100px 20px; text-decoration: none;}
+.sidebar ul li {
+    padding: 5px; 
+    list-style: none;
+}
+.sidebar ul li a {text-decoration: none;}
+ 
+
+/*
+.sidebar {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgba(249, 249, 249);
     padding: 15px 100px 15px 15px;
@@ -17,7 +32,7 @@
 
 }
 
-.topbar a {
+.sidebar a {
     left: 25%;
     display: inline-block;
     text-decoration: none;
@@ -27,16 +42,16 @@
     padding: 10px;
     border-bottom: solid 2px rgba(249, 249, 249);
 }
-.topbar a:hover {
+.sidebar a:hover {
     border-bottom: solid 2px rgb(142, 61, 61);
 }
-
+*/
 /*------------- Welcome section -----------------------------*/
 
 .heading-cont {
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)), url('./images/astronaut.jpg');
+            rgba(0, 0, 0, 0.2)), url('./images/skyline.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,7 +123,6 @@
 
 .info-align {
     width: 70%;
-    border: solid 1px black;
 }
 
 .about p {
@@ -123,16 +137,17 @@
 .skills-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 30%;
     box-sizing: border-box;
+    width: 30%;
+    text-align: left;
+    margin-left: 15px;
     padding: 5px;
-    
 }
 
-.skills-list li {
-    list-style-type: square;
-    padding: none;
+.skills-list{
+    align-self: auto;
 }
+
 
 .resume-btn {
     padding: 10px;
@@ -256,15 +271,13 @@ footer p {
 }
 
 
-
-
 /*------------- Web Responsive-----------------------------*/
 /* Nav responsive phones */
 @media only screen and (max-width: 425px) {
 
     * p,
     li { font-size: .9rem;}
-    .topbar {display: none;}
+    /*.topbar {display: none;}*/
 
     .heading-cont {height: auto;}
     .intro h2 {font-size: 2.5rem; padding-top: none;}
