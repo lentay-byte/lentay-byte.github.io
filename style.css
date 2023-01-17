@@ -89,23 +89,19 @@
 /*-------------  About and skills section  -----------------------------*/
 .mid-container {
     height: auto;
-    margin: 10px;
     min-height: 350px;
-    grid-gap: 10px;
     text-align: center;
-    
 }
 
 .mid-container h2 {
     font-size: 1.8em;
     font-weight: bold;
-    
+    padding: 20px;
 }
 
 .mid-container div {
     box-sizing: border-box;
-    margin: 10px auto;
-    width: 100%;
+    margin: auto;
     color: black;
     padding: 5px;
     width: 75%;
@@ -116,13 +112,12 @@
     
 }
 
+.info-align {
+    width: 70%;
+}
 .about {
     border-right: solid 5px #dbe0e4;
 
-}
-
-.info-align {
-    width: 70%;
 }
 
 .about p {
@@ -179,6 +174,7 @@
 .projects-cont h2 {
     font-size: 1.8em;
     text-align: center;
+    padding-top: 20px;
 }
 
 .card-holders {
@@ -277,19 +273,21 @@ footer p {
 
     * p,
     li { font-size: .9rem;}
-    /*.topbar {display: none;}*/
+    .sidebar {display: none;}
 
     .heading-cont {height: auto;}
     .intro h2 {font-size: 2.5rem; padding-top: none;}
     .intro {width: 95%; font-size: .8em;}
 
-    .mid-container { grid-template-columns: 1fr; width: 100%; grid-gap: 0;}
-    .about {border-bottom: solid 3px white; border-right: none;}
-    .about p {width: 93%; line-height: 1.4em; font-size: .9em;}
+    .mid-container {width: 100%; grid-gap: 0;}
+    .mid-container div {width: 90%;}
+    .info-align{ width: auto;}
+    .about {border: solid 1px black;}
+    .about p {width: 100%; line-height: 1.4em; font-size: .9em;}
 
     
     .skills-list {line-height: 1.5em; padding-left: 1px;}
-    .card-holders {width: 95%; padding: 1.5rem;}
+    .card-holders {width: 100%; padding: 1.5rem;}
     .p-card {padding: 2px; min-height: 0;}
     .p-card h3 {font-size: 1em;}
     .p-card p {font-size: 1em;}
@@ -300,7 +298,7 @@ footer p {
         grid-template-columns: 1fr;
         grid-gap: 0;
     }
-
+    
 }
 
 
@@ -308,4 +306,8 @@ footer p {
 
 @media only screen and (min-width:501px) and (max-width:768px) {
     .intro { width: 80%;}
+}
+
+@media only screen and (min-width:425px) and (max-width:768px) {
+    .sidebar ul{display: none};
 }
