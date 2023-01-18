@@ -143,6 +143,7 @@
     align-self: auto;
 }
 
+.btn-link{text-decoration: none;}
 
 .resume-btn {
     padding: 10px;
