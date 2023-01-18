@@ -18,7 +18,7 @@
     padding: 5px; 
     list-style: none;
 }
-.sidebar ul li a {text-decoration: none;}
+.sidebar ul li a {text-decoration: none; color: black;}
  
 .sidebar ul li a:visited {color: black;}
 
