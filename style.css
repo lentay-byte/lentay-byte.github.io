@@ -315,3 +315,25 @@ footer p {
 @media only screen and (min-width:425px) and (max-width:768px) {
     .sidebar ul{display: none};
 }
+
+.egg-section {
+    height: auto;
+    margin-top: 10px;
+}
+
+.egg-container{
+    background-color: #dbe0e4;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.egg-container h3:hover {
+    cursor: pointer;
+}
+
+.test {
+    display: none;
+}
