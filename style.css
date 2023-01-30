@@ -119,6 +119,13 @@
     border-right: solid 5px #dbe0e4;
 
 }
+#aboutid {
+    width: 15%;
+    margin: 0 auto;
+    transition-property: all;
+    transition-duration: 1.5s;
+    border-radius: 10px;
+}
 
 .about p {
     box-sizing: border-box;
@@ -164,6 +171,8 @@
 }
 
 
+
+
 /*------------- Projects Section -----------------------------*/
 
 .projects-cont {
@@ -176,6 +185,8 @@
     font-size: 1.8em;
     text-align: center;
     padding-top: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
 
 .card-holders {
@@ -316,24 +327,29 @@ footer p {
     .sidebar ul{display: none};
 }
 
+@media only screen and (max-width: 900px){
+    .egg-section {display: none;}
+}
+
 .egg-section {
     height: auto;
     margin-top: 10px;
 }
 
-.egg-container{
+#box{
     background-color: #dbe0e4;
-    width: 35%;
+    width: 20%;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
 }
 
-.egg-container h3:hover {
+#box h3:hover {
     cursor: pointer;
 }
 
-#test { 
+#box p {
     display: none;
+    padding: 20px;
 }

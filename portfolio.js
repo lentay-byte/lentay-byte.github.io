@@ -1,26 +1,99 @@
-eggHeading = document.getElementById('egg-head');
 
-function enableEggHead(){
-    eggHeading.innerHTML = "YES DO IT!";
+//global variables for easter egg instuction 
+boxhead = document.getElementById('box-head');
+box = document.getElementById('box');
+
+
+//functions for easter egg instructions
+
+function enableBoxHead(){
+    boxhead.innerHTML = "YES DO IT!";
 }
-function disableEggHead(){
-    eggHeading.innerHTML = "NO COME BACK!!";
+
+function disableBoxHead(){
+    boxhead.innerHTML = "NO COME BACK!!";
 }
-
-eggHeading.addEventListener('mouseover', enableEggHead)
-eggHeading.addEventListener('mouseout', disableEggHead);
-
 
 function triggerEasterEggs(){
-    document.getElementById('egg-head').innerHTML = "Lets play a game :)";
-    document.getElementById('test').style.display = 'inline';
-    eggHeading.removeEventListener('mouseout',disableEggHead)
-    eggHeading.removeEventListener('mouseover', enableEggHead)
+    document.getElementById('box-head').innerHTML = "FIND THE EASTER EGGS";
+    boxhead.removeEventListener('mouseout',disableBoxHead)
+    boxhead.removeEventListener('mouseover', enableBoxHead)
+    box.style.width = '40%';
+    document.getElementById('egg-instructions').style.display = 'inline'
+    enableEasterEggs();
+}
+
+
+// event listener for easter egg isructions 
+boxhead.addEventListener('mouseover', enableBoxHead)
+boxhead.addEventListener('mouseout', disableBoxHead);
+
+//triggers easter egg game
+boxhead.addEventListener('click', triggerEasterEggs);
+
+
+//contains easter egg functions
+function enableEasterEggs(){
+        //First Easter egg 
+
+    let changeName = document.getElementById('m-heading');
+
+    function changeHeading (){
+        changeName.innerHTML = "Y Pree!";
+        changeName.style.color = 'lightgreen';
+    }
+
+    changeName.onclick = changeHeading;
+
+    //Second Easter egg 
+
+    let secondEastEgg = document.getElementById('sec-east');
+
+    function changeSymbol(){
+        secondEastEgg.innerHTML = '<>';
+    }
+    function undoSymbol(){
+        secondEastEgg.innerHTML = 'HTML<>'
+        secondEastEgg.style.color = 'green'
+        
+    }
+
+    secondEastEgg.onmousedown = changeSymbol;
+    secondEastEgg.onmouseup = undoSymbol;
+
+    //third easter egg
+
+    let thirdEastEgg = document.getElementById('aboutid');
+
+    function stretch(){
+        thirdEastEgg.style.width = '72%'
+        thirdEastEgg.style.backgroundColor = 'lightgreen';
+    }
+
+    function cancelStretch(){
+        thirdEastEgg.style.width = '15%';
+    }
+
+    thirdEastEgg.onmousedown = stretch;
+    thirdEastEgg.onmouseup = cancelStretch;
+
+    //fourth easter egg
+
+    let fourthEastEgg = document.getElementById('proj-head')
+
+    function scale (){
+        fourthEastEgg.style.fontSize = '12em';
+        fourthEastEgg.style.color = 'lightgreen';
+    }
+
+    function cancelScale(){
+        fourthEastEgg.style.fontSize = '1.8em';
+    }
+        
+
+    fourthEastEgg.onmousedown = scale;
+    fourthEastEgg.onmouseup = cancelScale;
 
 }
 
-eggHeading.addEventListener('click', triggerEasterEggs);
 
-
-
-//about.addEventListener('mousedown', change);
