@@ -65,17 +65,17 @@ function enableEasterEggs(){
 
     let thirdEastEgg = document.getElementById('aboutid');
 
-    function stretch(){
-        thirdEastEgg.style.width = '72%'
+    function shrink(){
+        thirdEastEgg.style.width = '15%'
         thirdEastEgg.style.backgroundColor = 'lightgreen';
     }
 
-    function cancelStretch(){
-        thirdEastEgg.style.width = '15%';
+    function cancelShrink(){
+        thirdEastEgg.style.width = '72%';
     }
 
-    thirdEastEgg.onmousedown = stretch;
-    thirdEastEgg.onmouseup = cancelStretch;
+    thirdEastEgg.onmousedown = shrink;
+    thirdEastEgg.onmouseup = cancelShrink;
 
     //fourth easter egg
 
