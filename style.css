@@ -8,6 +8,9 @@
 strong {
     color: #42d765;
 }
+.sidebar2 ul strong{
+    color: #ccdf22;
+}
 /*------------- contact bar left ------------------------*/
 .sidebar1 {
     position: fixed;
