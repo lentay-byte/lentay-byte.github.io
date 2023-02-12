@@ -1,0 +1,20 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "##DESCRIPTION",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lentay-byte/lentay-byte.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lentay-byte/lentay-byte.github.io/issues"
+  },
+  "homepage": "https://github.com/lentay-byte/lentay-byte.github.io#readme"
+}
