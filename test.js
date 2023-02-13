@@ -1,17 +1,26 @@
-import { assert } from 'console';
-import { describe } from 'mocha';
-import { Obj } from './portfolio';
 
-assert = require('assert');
+const assert = require('assert');
+const { Obj } = require('./portfolio');
 
 describe('Obj', ()=>{
-    describe('.test', ()=>{
-        it('returns a confirmation message', ()=>{
-            var expectedResult = 'This works nows';
-            var results = Obj.test();
+    describe('.sum', ()=>{
+        it('returns the sum of an array', ()=>{
+            const expectedResult = 33;
+            let testnumbers = [3,6,15,9];
+            let results = Obj.sum(testnumbers)
 
-            assert.strictEqual(results, expectedResult);
+            assert.strictEqual(results, expectedResult)
         })
 
     })
+    describe('printSum', ()=>{
+        it('prints a string message showing the sum', ()=>{
+            let testVal = 'The sum is 12';
+            let message = Obj.printSum(12);
+
+            assert.strictEqual(message, testVal)
+
+        })
+    })
+    
 })
