@@ -1,13 +1,12 @@
 # My-Portfolio
 
-##DESCRIPTION
+TO DO 
 
-    This roject contain code that is used to build my personal porfolio website. This website will hold my 
+- add a contact form  
+- change resume 
+- Improve page information 
 
-FEATURES:
 
-
- HOW TO USE:
 
 
 
