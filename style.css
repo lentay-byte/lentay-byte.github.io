@@ -200,6 +200,7 @@ strong {
 }
 
 .btn-holder{
+    display: flex;
     margin-top: 20px;
     text-align: center;
     padding: 10px;
